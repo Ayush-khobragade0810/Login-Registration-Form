@@ -1,7 +1,8 @@
 <web-app>
      <servlet>
         <servlet-name>loginJsp</servlet-name>
-        <jsp-file>/DBConnection2.jsp</jsp-file>
+        <jsp-file>/Registration.jsp</jsp-file>
+		<jsp-file>/Login.jsp</jsp-file>
     </servlet>
     <servlet-mapping>
         <servlet-name>loginJsp</servlet-name>
