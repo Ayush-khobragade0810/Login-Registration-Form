@@ -1,0 +1,13 @@
+<web-app>
+     <servlet>
+        <servlet-name>loginJsp</servlet-name>
+        <jsp-file>/DBConnection2.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginJsp</servlet-name>
+        <url-pattern>/Login.jsp</url-pattern>
+    </servlet-mapping>
+	<welcome-file>
+	<welcome-file-name>/index.html</welcome-file-name>
+	</welcome-file>
+</web-app>

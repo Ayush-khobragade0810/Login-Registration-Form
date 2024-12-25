@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> Login Page </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Login.jsp">
+  <link rel="stylesheet" href="Registration.jsp">
+ </head>
+
+ <body>
+	<!--==Navigation================================-->
+    <nav class="navigation">
+		
+		<label for="menu-btn" class="menu-icon">
+		  <span class="nav-icon"></span>
+		</label>
+		<!--menu-------->
+		<ul class="menu">
+		  <li><a href="index.html" class="active">Home</a></li>
+		  <li><a href="About.html" onclick="showPage('about-section')">About</a></li>
+		  <li><a href="Services.html">Services</a></li>
+		  <li><a href="Contact.html" onclick="showPage('contact')">Contact</a></li>
+		  <button class="btnlogin-popup">Login</button>
+		</ul>
+	</nav>
+  
+	<!-- Wrapper Class Start -->
+	<div class="wrapper">
+		<span class="icon-close">
+			<ion-icon name="close"></ion-icon>
+		</span>
+		<!-- Login Page Start -->
+		<div class="form-box login">
+			<h2>Login</h2>
+			<form method="post" action="Login.jsp">
+				<div class="input-box">
+					<span class="icon"><ion-icon name="mail"></ion-icon></span>
+					<input type="email" name="email" required>
+					<label>Email</label>
+				</div>
+				<div class="input-box">
+					<span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+					<input type="hidden" name="action" value="login">
+					<input type="password" name="userpassword" required>
+					<label>Password</label>
+				</div>
+				<div class="remember-forgot">
+					<label><input type="checkbox">Remember me</label>
+				</div>
+				
+				<button type="submit" value="login" class="btnlogin">Login</button>
+				
+				<div class="login-register">
+					<p>Don't have an account? 
+					<a href="#" class="register-link">Sign up</a></p>
+				</div>
+			</form>
+		</div>
+		<!-- Login Page End -->
+		<!-- Registration Page Start -->
+		<div class="form-box registration">
+			<h2>Registration</h2>
+			<form method="get" action="Registration.jsp">
+				<div class="input-box">
+					<span class="icon"><ion-icon name="person"></ion-icon></span>
+					<input type="text" name="username" required>
+					<label>Username</label>
+				</div>
+				<div class="input-box">
+					<span class="icon"><ion-icon name="mail"></ion-icon></span>
+					<input type="email" name="email" required>
+					<label>Email</label>
+				</div>
+				<div class="input-box">
+					<span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+					<input type="password" name="userpassword" required>
+					<label>Password</label>
+				</div>
+				<div class="remember-forgot">
+					<label><input type="checkbox" required>I agree to the terms & conditions</label>
+				</div>
+				<input type="submit" value="Register" class="btnregister" name="Register">
+				
+				<div class="login-register">
+					<p>Already have an account? 
+					<a href="#" class="login-link">Login</a></p>
+				</div>
+			</form>
+		</div>
+		<!-- Registration Page End -->
+	</div>
+	<!-- Wrapper Class End -->
+	 <!-- script start -->
+	 <script src="script.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<!-- script end -->
+ </body>
+</html>
