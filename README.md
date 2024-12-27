@@ -1,4 +1,4 @@
-# Login and Registration System
+# Login-Registration-Form
 
 This project is a simple web application that allows users to register and log in. It includes basic HTML, CSS, and JavaScript for the front end, while the back-end logic is powered by JSP (Java Server Pages) with MySQL for database management.
 
