@@ -77,7 +77,8 @@ Project Structure
 ├── script.js           # JavaScript for dynamic behavior
 └── WEB-INF/
     └── web.xml         # Web configuration for servlets and mappings
-
+    └── lib/
+          └── mysql-connector-j-8.0.33.jar
 Troubleshooting
 Database Connection Issues: Ensure that MySQL is running and the database connection details are correct.
 Form Submission Issues: Ensure that you have all the required fields (username, email, password) filled out before submitting the forms.
